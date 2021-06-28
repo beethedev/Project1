@@ -16,6 +16,7 @@ class ViewController: UITableViewController {
         title = "Storm Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        //Project 3 challenge solution
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(recommendApp))
         
         let fm = FileManager.default
@@ -50,6 +51,7 @@ class ViewController: UITableViewController {
         }
     }
     
+    // Project3 challenge solution
     @objc func recommendApp() {
         let vc = UIActivityViewController(activityItems: ["Check out Storm Viewer!"], applicationActivities: [])
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
